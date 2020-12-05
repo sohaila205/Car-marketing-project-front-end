@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="wv.css">
+
+    <script>
+function swapStyleSheet(sheet){
+	document.getElementById('pagestyle').setAttribute('href', sheet);
+}
+    </script>
+
+    <style>
+
+     .azura{
+          background-color:white;
+          width:20px;
+          height:20px;
+          border-radius:20px;
+          border-color: antiquewhite;
+      }
+      .redd{
+          background-color:firebrick;
+          width:20px;
+          height:20px;
+          border-radius:20px;
+          border-color: antiquewhite;
+      }
+      .blackk{
+          background-color:black;
+          width:20px;
+          height:20px;
+          border-radius:20px;
+          border-color: antiquewhite;
+      }
+      
+
+     </style>
+</head>
+<body>
+    <nav class="menu">
+
+
+       <ul>
+   <label class="logo" size="35">LIGHTNING MCQWEEN </label>
+    <li> 
+        <button onclick="swapStyleSheet('dark.css')" class="blackk"></button>
+        <button onclick="swapStyleSheet('red.css')" class="redd" ></button>
+        <button onclick="swapStyleSheet('wv.css')" class="azura"></button>
+    </li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">TRAINING</a></li>
+    <li><a href="#">MARKET</a></li>
+    <li><a href="#">TEAM</a></li>
+    
+        </ul>
+       
+     </nav>
+
+ <div class="page">
+
+       
+    <div class="container">
+       <img src="1p.jpeg"  class="image" >
+        <div class="text">2020 RLX<br><small class="ff">Premium Luxury Sedan</small><br><span>Starting at $54,900</span><br>Available: 44<br>
+		        color:<small class="gray">gray</small> 
+                      <small class="blue">blue</small>
+                      <small class="black">black</small>
+                      <small class="red">red</small>
+                      <br>
+		              <br>
+              <form id="BUY" >
+                  <input type="button"  value="BUY NOW">
+              </form> 
+        </div>
+        <form class="overlay"  name="panel" action="/action_page.php" onsubmit="return validateForm()" method="post" >
+            <div id="panel">
+                <input class="inputbox" type="mail"placeholder="cridet" name="fname" >
+                <br>
+                <input class="inputbox" type="mail"placeholder="your number" name="pass" >
+                <br>
+                <br>
+                <button id="myBtn">submit</button>
+                <script>
+                    function validateForm() {
+                        var x = document.forms["panel"]["fname"].value;
+                        var y = document.forms["panel"]["pass"].value;
+
+           if (x == "" ) {
+           alert("credit must be filled out");
+           return false;
+            }
+           else if( y==""){
+          alert("phone must be filled out");
+          return false;
+            }
+          else{
+         alert("The purchase was successful ,We will contact you");
+         return false;
+          }
+          }
+       </script>
+     </div>
+     </form>
+  </div>
+
+<!-- ****************************************************************************************************************************************************** -->
+
+     <div class="container">
+            <img src="2p.png" class="image">
+            <div class="text">Atlas <br><small class="ff">The family SUV</small><br><span>Starting at $31,545</span><br>Available: 46<br>
+		         color: <small class="blue">blue</small> 
+                <small class="gray">gray</small> 
+                <small class="red">red</small>   
+                <small class="black">black</small>
+                <br>
+                <br>
+
+            <form id="BUY" >
+              <input type="button"  value="BUY NOW">
+            </form>
+		    </div>
+        <form class="overlay" name="panel1" action="/action_page.php" onsubmit="return validateForm1()" method="post">
+        <div id="panel">
+             <input class="inputbox" type="mail"placeholder="cridet" name="fname"  >
+               <br>
+               <input class="inputbox" type="mail"placeholder="your number" name="pass" >
+                <br>
+                 <br>
+                <button id="myBtn0">submit</button>
+                <script>
+                    function validateForm1() {
+                       var x = document.forms["panel1"]["fname"].value;
+                       var y = document.forms["panel1"]["pass"].value;
+
+                       if (x == "" ) {
+                             alert("credit must be filled out");
+                                        return false; 
+                       }
+                        else if( y==""){
+                            alert("phone must be filled out");
+                                         return false;
+                        }
+                        else{
+                            alert("The purchase was successful ,We will contact you");
+                            return false;
+                        }
+                    }
+            </script>
+            </div>
+         </form>
+    </div>
+
+<!-- ****************************************************************************************************************************************************** -->
+
+
+	
+	    <div class="container">
+
+            <img src="3p.png" class="image" >
+            <div class="text">Jetta GLI<br><small class="ff">The performance sedan</small><br><span>Starting at $26,245</span><br>Available: 41<br>
+            color: <small class="blue">blue</small> 
+            <small class="gray">gray</small> 
+            <small class="red">red</small>  
+            <small class="black">black</small> 
+                <br>
+                <br>
+                <form id="BUY" >
+                    <input type="button"  value="BUY NOW">
+                </form> 
+            </div>
+            <form class="overlay" name="panel2" action="/action_page.php" onsubmit="return validateForm2()" method="post" >
+                <div id="panel">
+                    <input class="inputbox" type="mail"placeholder="cridet"  name="fname" >
+                    <br>
+                    <input class="inputbox" type="mail"placeholder="your number" name="pass" >
+                    <br>
+                    <br>
+                    <button id="myBtn1">submit</button>
+                    <script>
+                        function validateForm2() {
+                            var x = document.forms["panel2"]["fname"].value;
+                            var y = document.forms["panel2"]["pass"].value;
+                            if (x == "" ) {
+                                alert("credit must be filled out");
+                                return false;
+                            }
+                            else if( y==""){
+                                alert("phone must be filled out");
+                                return false;
+                            }
+                            else{
+                                alert("The purchase was successful ,We will contact you");
+                                return false;
+                            }
+                        }
+                    </script>
+                </div>
+            </form>
+     </div>
+	    
+  
+<!-- ****************************************************************************************************************************************************** -->
+
+
+	
+	
+	
+     <div class="container">
+         <img src="4p.png" class="image" >
+         <div class="text">Passat<br><small class="ff">The midsize sedan</small><br><span>Starting at $22,995</span><br>Available: 44<br>
+             color: 
+             <small class="blue">blue</small> 
+             <small class="gray">gray</small> 
+             <small class="red">red</small> 
+             <small class="black">black</small>
+             <br>
+             <br>
+             <form id="BUY" >
+                 <input type="button"  value="BUY NOW">
+             </form> 
+         </div> 
+         <form class="overlay" name="panel3" action="/action_page.php" onsubmit="return validateForm3()" method="post"  >
+             <div id="panel">
+                 <input class="inputbox" type="mail"placeholder="cridet" name="fname" >
+                 <br>   
+                 <input class="inputbox" type="mail"placeholder="your number" name="pass" >
+                 <br>
+                 <br>
+                 <button id="myBtn2">submit</button>
+                 <script>
+                     function validateForm3() {
+                         var x = document.forms["panel3"]["fname"].value;
+                         var y = document.forms["panel3"]["pass"].value;
+                         if (x == "" ) {
+                             alert("credit must be filled out");
+                             return false;
+                         }
+                         else if( y==""){
+                               alert("phone must be filled out");
+                             return false;
+                         }
+                         else{
+                             alert("The purchase was successful ,We will contact you");
+                             return false;
+                         }
+                     }
+                 </script>
+             </div>
+         </form>
+     </div>
+	    
+
+<!-- ****************************************************************************************************************************************************** -->
+
+
+
+	
+		
+     <div class="container">
+
+         <img src="5p.png" class="image">
+         <div class="text">Tiguan<br><small class="ff" >The stylish SUV</small><br><span>Starting at $24,945</span><br>Available: 49<br>
+             color: <small class="blue">blue</small>
+             <small class="gray">gray</small> 
+             <small class="red">red</small>   
+             <small class="black">black</small>  
+             <br>
+             <br>
+             <form id="BUY" >
+                 <input type="button"  value="BUY NOW">
+             </form>
+		 </div> 
+         <form class="overlay" name="panel4" action="/action_page.php" onsubmit="return validateForm4()" method="post">
+             <div id="panel">
+                 <input class="inputbox" type="mail"placeholder="cridet" name="fname" >
+                 <br>
+                 <input class="inputbox" type="mail"placeholder="your number" name="pass">
+                 <br>
+                 <br>
+                 <button id="myBtn3">submit</button>
+                 <script>
+                     function validateForm4() {
+                         var x = document.forms["panel4"]["fname"].value;
+                         var y = document.forms["panel4"]["pass"].value;
+                         if (x == "" ) {
+                             alert("credit must be filled out");
+                             return false;
+                        }
+                         else if( y==""){
+                             alert("phone must be filled out");
+                             return false;
+                         }
+                         else{
+                             alert("The purchase was successful ,We will contact you");
+                             return false;
+                         }
+                     }
+                 </script>
+             </div>
+         </form>
+     </div>
+	    
+    
+	<!-- ****************************************************************************************************************************************************** -->
+
+	
+	
+			   
+     <div class="container">
+         <img src="6p.png" class="image">
+         <div class="text">Atlas cross sport<br><small class="ff">The bold SUV</small><br><span>Starting at $30,545</span><br>Available: 52<br>
+             color:  <small class="gray">gray</small> 
+             <small class="blue">blue</small> 
+             <small class="black">black</small>
+             <small class="red">red</small>   
+             <br>
+             <br>
+             <form id="BUY" >
+                 <input type="button" value="BUY NOW">
+             </form> 
+		 </div> 
+         <form class="overlay"name="panel5" action="/action_page.php" onsubmit="return validateForm5()" method="post" >
+             <div id="panel">
+                 <input class="inputbox" type="mail"placeholder="cridet"   name="fname">
+                 <br>
+                 <input class="inputbox" type="mail"placeholder="your number" name="pass">
+                 <br>
+                 <br>
+                 <button id="myBtn4">submit</button>
+                 <script>
+                     function validateForm5() {
+                         var x = document.forms["panel5"]["fname"].value;
+                         var y = document.forms["panel5"]["pass"].value;
+                         if (x == "" ) {
+                             alert("credit must be filled out");
+                             return false;
+                         }
+                         else if( y==""){
+                             alert("phone must be filled out");
+                             return false;
+                         }
+                         else{
+                             alert("The purchase was successful ,We will contact you");
+                             return false;
+                         }
+                     }
+                 </script>
+             </div>
+         </form>
+     </div>
+	    
+ 
+	<!-- ****************************************************************************************************************************************************** -->
+
+	
+	
+	
+		
+     <div class="container">
+         <img src="7p.png" class="image" >
+        <div class="text">The wagon<br><small class="ff" >Golf SportWagen</small><br><span>Starting at $21,895</span><br>Available: 57<br>
+            color:  <small class="gray">gray</small>
+            <small class="blue">blue</small> 
+            <small class="black">black</small>
+            <small class="red">red</small>             
+            <br>
+            <br>
+            <form id="BUY" >
+                <input type="button"  value="BUY NOW">
+            </form> 
+         </div> 
+         <form class="overlay" name="panel6" action="/action_page.php" onsubmit="return validateForm6()" method="post">
+             <div id="panel">
+                 <input class="inputbox" type="mail"placeholder="cridet" name="fname" >
+                 <br>
+                 <input class="inputbox" type="mail"placeholder="your number" name="pass" >
+                 <br>
+                 <br>
+                 <button id="myBtn5">submit</button>
+                 <script>
+                     function validateForm6() {
+                         var x = document.forms["panel6"]["fname"].value;
+                         var y = document.forms["panel6"]["pass"].value;  
+                         if (x == "" ) {
+                             alert("credit must be filled out");
+                             return false;
+                         }
+                         else if( y==""){
+                             alert("phone must be filled out");
+                             return false;
+                         }
+                         else{
+                             alert("The purchase was successful ,We will contact you");
+                             return false;
+                         }
+                     }
+                 </script>
+             </div>
+         </form>
+     </div>
+
+
+	
+	<!-- ****************************************************************************************************************************************************** -->
+
+	
+				   
+     <div class="container">
+         <img src="8p.png" class="image" >
+         <div class="text">Beetle<br><small class="ff" >The sporty icon</small><br><span>Starting at $20,895</span><br>Available: 63<br>
+             color:  <small class="gray">gray</small> 
+             <small class="blue">blue</small> 
+             <small class="black">black</small>
+             <small class="red">red</small>  
+             <br>
+             <br>
+             <form id="BUY" action="/action_page.php">
+                 <input type="button"  value="BUY NOW">
+             </form>  
+         </div> 
+         <form class="overlay" name="panel7" action="/action_page.php" onsubmit="return validateForm7()" method="post">
+             <div id="panel">
+                 <input class="inputbox" type="mail"placeholder="cridet" name="fname" >
+                 <br>
+                 <input class="inputbox" type="mail"placeholder="your number" name="pass">
+                 <br>
+                 <br>
+                 <button id="myBtn6">submit</button>
+                 <script>
+                     function validateForm7() {
+                         var x = document.forms["panel7"]["fname"].value;
+                         var y = document.forms["panel7"]["pass"].value;
+                         if (x == "" ) {
+                             alert("credit must be filled out");
+                             return false;
+                         }
+                         else if( y==""){
+                               alert("phone must be filled out");
+                             return false;
+                         }
+                         else{
+                             alert("The purchase was successful ,We will contact you");
+                             return false;
+                         }
+                     }
+                 </script>
+             </div>
+         </form>
+     </div>
+	
+	    
+   	
+	
+	</div>	
+	</body>
+</html>

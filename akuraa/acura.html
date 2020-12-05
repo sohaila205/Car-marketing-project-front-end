@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+<link id="pagestyle" rel="stylesheet" type="text/css" href="acura.css">
+
+<script>
+function swapStyleSheet(sheet){
+	document.getElementById('pagestyle').setAttribute('href', sheet);
+}
+</script>
+
+<style>
+
+ .azura{
+          background-color:red;
+          width:20px;
+          height:20px;
+          border-radius:20px;
+          border-color: antiquewhite;
+      }
+      .green{
+          background-color:green;
+          width:20px;
+          height:20px;
+          border-radius:20px;
+          border-color: antiquewhite;
+      }
+      .blackk{
+          background-color:black;
+          width:20px;
+          height:20px;
+          border-radius:20px;
+          border-color: antiquewhite;
+      }
+      
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+    <body>      
+        <nav class="menu">
+            <ul>
+                <label class="logo" size="35">LIGHTNING MCQWEEN</label>  
+                <li>
+                    <button onclick="swapStyleSheet('black.css')" class="blackk"></button>
+                    <button onclick="swapStyleSheet('green.css')" class="green" ></button>
+                    <button onclick="swapStyleSheet('acura.css')" class="azura"></button>
+                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TRAINING</a></li>
+                <li><a href="#">MARKET</a></li>
+                <li><a href="#">TEAM</a></li>
+            </ul>
+
+        </nav>
+	<!-- ****************************************************************************************************************************************************** -->
+
+ 
+        <div class="page">
+            <div class="square" >
+                <div class="pic">
+                    <img src="1p.jpg" width="300px" height="300px">
+                </div>
+                <br>
+                <div class="p">2020 ILX<br><small class="ff">Compact Sport Sedan</small><br><span class="red">Starting at $25,900</span><br>Available: 38<br>
+                    color: <small class="red">red</small> 
+                    <small class="gray">gray</small> 
+                    <small class="blue">blue</small> 
+                    <small class="black">black</small> 
+                    <br>
+                    <div id="flip">
+                        <form id="BUY" action="/action_page.php">
+                        <input type="button" onclick="myFunction()" value="BUY NOW">
+                        </form>
+                    </div>
+                    <div id="panel">
+                        <button class="exit" >
+                            <i class="fa fa-close" style="font-size:17px"></i>
+                        </button>
+                        <br>
+                        <span class="inputbox">crdiet number </span><input class="uu" type="mail"placeholder="cridet" required >
+                        <span class="inputbox">phone</span> <input class="uu" type="mail"placeholder="your number" required>
+                        <br>
+                        <br>
+                        <button id="myBtn">submit</button>
+                        <script> 
+                            function myFunction() {
+                                document.getElementById("panel").submit();
+                            }
+                            document.getElementById("myBtn").addEventListener("click", function() {
+                                alert("The purchase was successful ,We will contact you");
+                            });
+                            $(document).ready(function(){
+                                $("button").click(function(){
+                                    $("#panel").fadeOut();
+                                    $("#hh").fadeOut();
+                                });
+                            });  
+                            $(document).ready(function(){
+                                $("#flip").click(function(){	    
+                                    $("#panel").slideDown("slow");
+                                    $("#hh").slideDown("slow");
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+	<!-- ****************************************************************************************************************************************************** -->
+
+
+            <div class="square"> 
+                <div class="pic">
+                    <img src="2p.jpeg" width="300px" height="300px">
+                </div>
+                <br>
+                <div class="p">2020 TLX<br><small class="ff">Performance Luxury Sedan</small><br><span>Starting at $33,000</span><br>Available: 41<br>
+                    color: <small class="blue">blue</small> 
+                    <small class="gray">gray</small>
+                    <small class="red">red</small>  
+                    <small class="black">black</small> 
+                    <br>
+                    <div id="flip2">
+                        <form id="BUY" action="/action_page.php">
+                            <input type="button" onclick="myFunction()" value="BUY NOW">
+                        </form>
+                    </div>
+                    <div id="panel2">
+                        <button class="exit" >
+                            <i class="fa fa-close" style="font-size:17px"></i>
+                        </button>
+                        <br>
+                        <span class="inputbox">crdiet number </span>
+                        <input class="uu" type="mail"placeholder="cridet" required >
+                        <span class="inputbox">phone</span>
+                        <input class="uu" type="mail"placeholder="your number" required>
+                        <br>
+                        <br>
+                        <button id="myBtn0" required>submit</button>
+                        <script>
+                            function myFunction() {
+                                document.getElementById("panel2").submit();
+                            }
+                            $(document).ready(function(){
+                                $("button").click(function(){
+                                    $("#panel2").fadeOut();
+                                    $("#hh").fadeOut();
+                                });
+                            });
+                            document.getElementById("myBtn0").addEventListener("click", function() {
+                                alert("The purchase was successful ,We will contact you");
+                            });
+                            $(document).ready(function(){
+                                $("#flip2").click(function(){	 
+                                    $("#panel2").slideDown("slow");
+                                    $("#hh").slideDown("slow");
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+	<!-- ****************************************************************************************************************************************************** -->
+
+
+ 
+            <div class="square">
+                <div class="pic">
+                    <img src="3p.jpeg" width="300px" height="300px">
+                </div>
+                <br>
+                <div class="p">2020 RLX<br><small class="ff">Premium Luxury Sedan</small><br><span>Starting at $54,900</span><br>Available: 44<br>
+                    color:  <small class="gray">gray</small>
+                    <small class="blue">blue</small> 
+                    <small class="black">black</small> 
+                    <small class="red">red</small>   
+                    <br>
+                    <div id="flip3"><form id="BUY" action="/action_page.php">  
+                        <input type="button" onclick="myFunction()" value="BUY NOW">
+                        </form>
+                                </div>
+                    <div id="panel3">
+                        <button class="exit" >
+                            <i class="fa fa-close" style="font-size:17px"></i>
+                        </button>
+                        <br>
+                        <span class="inputbox">crdiet number </span>
+                        <input class="uu" type="mail"placeholder="cridet" required >
+                        <span class="inputbox">phone</span>
+                        <input class="uu" type="mail"placeholder="your number" required>
+                        <br>
+                        <br>
+                        <button id="myBtn1">submit</button>
+                        <script>
+                            function myFunction() {
+                                document.getElementById("panel3").submit();
+                            }
+                            $(document).ready(function(){
+                                $("button").click(function(){
+                                    $("#panel3").fadeOut();
+                                    $("#hh").fadeOut();
+                                });
+                            });
+                            document.getElementById("myBtn1").addEventListener("click", function() {
+                                alert("The purchase was successful ,We will contact you");
+                            });
+                            $(document).ready(function(){
+                                $("#flip3").click(function(){	 
+                                    $("#panel3").slideDown("slow");
+                                    $("#hh").slideDown("slow"); 
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+
+	<!-- ****************************************************************************************************************************************************** -->
+
+
+<div id="hh">
+
+</div>
+
+
+	<!-- ****************************************************************************************************************************************************** -->
+
+
+
+   
+     <div class="square">
+         <div class="pic">
+             <img src="4p.png" width="300px" height="300px">
+         </div>
+         <br>
+         <div class="p">2020 RDX <br><small class="ff">Luxury Crossover SUV</small><br><span>Starting at $37,800</span><br>Available: 46<br>
+             color: <small class="black">black</small>
+             <small class="red">red</small>
+             <small class="gray">gray</small> 
+             <small class="blue">blue</small> 
+             <br>
+             <div id="flip4">
+                 <form id="BUY" action="/action_page.php">
+                 <input type="button" onclick="myFunction()" value="BUY NOW">
+                 </form>
+             </div>
+             <div id="panel4">
+                 <button class="exit" >
+                     <i class="fa fa-close" style="font-size:17px"></i>
+                 </button>
+                 <br>
+                 <span class="inputbox">crdiet number </span><input class="uu" type="mail"placeholder="cridet" required >
+                 <span class="inputbox">phone</span> <input class="uu" type="mail"placeholder="your number" required>
+                 <br>
+                 <br>
+                 <button id="myBtn2">submit</button>
+                 <script>
+                     function myFunction() {
+                         document.getElementById("panel4").submit();
+                     }
+                     $(document).ready(function(){
+                         $("button").click(function(){
+                             $("#panel4").fadeOut();
+                             $("#hh").fadeOut();
+                         });
+                     });
+                     document.getElementById("myBtn2").addEventListener("click", function() {
+                         alert("The purchase was successful ,We will contact you");
+                     });
+                     $(document).ready(function(){
+                         $("#flip4").click(function(){	 
+                             $("#panel4").slideDown("slow");
+                         });
+                     });
+                 </script>
+             </div>
+         </div>
+     </div>
+
+	<!-- ****************************************************************************************************************************************************** -->
+
+
+ 
+     <div class="square">
+         <div class="pic">
+             <img src="5p.png" width="300px" height="300px">
+         </div>
+         <br>
+         <div class="p">2020 MDX<br><small class="ff">Three-Row Luxury SUV</small><br><span>Starting at $44,500</span><br>Available: 49<br>
+             color: <small class="gray">gray</small>
+             <small class="red">red</small> 
+             <small class="blue">blue</small> 
+             <small class="black">black</small>
+             <br>
+             <div id="flip5"><form id="BUY" action="/action_page.php">
+                 <input type="button" onclick="myFunction()" value="BUY NOW">
+                 </form>
+             </div>
+             <div id="panel5">
+                 <button class="exit" >
+                     <i class="fa fa-close" style="font-size:17px"></i>
+                 </button>
+                 <br>
+                 <span class="inputbox">crdiet number </span><input class="uu" type="mail"placeholder="cridet" required >
+                 <span class="inputbox">phone</span> <input class="uu" type="mail"placeholder="your number" required>
+                 <br>
+                 <br>
+                 <button id="myBtn3">submit</button>
+                 <script>
+                     function myFunction() {
+                         document.getElementById("panel5").submit();
+                     }
+                     $(document).ready(function(){
+                         $("button").click(function(){
+                             $("#panel5").fadeOut();
+                             $("#hh").fadeOut();
+                         });
+                     });
+                         document.getElementById("myBtn3").addEventListener("click", function() {
+                         alert("The purchase was successful ,We will contact you");
+                     });
+                     $(document).ready(function(){
+                         $("#flip5").click(function(){	 
+                             $("#panel5").slideDown("slow");
+                         });
+                     });
+                 </script>
+             </div>
+         </div>
+     </div>
+	<!-- ****************************************************************************************************************************************************** -->
+
+
+ 
+     <div class="square">    
+         <div class="pic">
+             <img src="6p.png" width="300px" height="300px">
+         </div>
+         <br>
+         <div class="p">NSX<br><small class="ff">Next-Generation supercar</small><br><span>Starting at $157,700</span><br>Available: 52<br>
+             color:  <small class="yellow">yellow</small>
+             <small class="black">black</small> 
+             <small class="red">red</small> 
+             <small class="gray">gray</small> 
+             <br>
+             <div id="flip6"><form id="BUY" action="/action_page.php">		 
+                 <input type="button" onclick="myFunction()" value="BUY NOW">
+                 </form>
+             </div>
+             <div id="panel6">
+                 <button class="exit" >
+                     <i class="fa fa-close" style="font-size:17px"></i>
+                 </button>
+                 <br>
+                 <span class="inputbox">crdiet number </span><input class="uu" type="mail"placeholder="cridet" required >
+                 <span class="inputbox">phone</span> <input class="uu" type="mail"placeholder="your number" required>
+                 <br>
+                 <br>
+                 <button id="myBtn4">submit</button>
+                 <script>
+                     function myFunction() {
+                         document.getElementById("panel6").submit();
+                     }
+                     $(document).ready(function(){
+                         $("button").click(function(){
+                             $("#panel6").fadeOut();
+                             $("#hh").fadeOut();
+                         });
+                     });
+                     document.getElementById("myBtn4").addEventListener("click", function() {
+                         alert("The purchase was successful ,We will contact you");
+                     });
+                     $(document).ready(function(){
+                         $("#flip6").click(function(){	 
+                             $("#panel6").slideDown("slow");
+                         });
+                     });
+                 </script>
+             </div>
+         </div>     
+     </div>
+    </div>
+	<!-- ****************************************************************************************************************************************************** -->
+
+
+    <div class="sidebar">
+        <img src="logo.jpg" width=100px height=90px>
+        <br>
+        Acura (アキュラ, Akyura) is the luxury vehicle division of Japanese automaker Honda.The brand was launched in the United States and Canada on 27 March 1986, marketing luxury, performance, and high-performance vehicles.
+        <br>
+        <img src="1s.jpg" width=100px height=90px>
+        <br>
+        <img src="2s.jpg" width=100px height=90px>
+        <br>
+        <img src="3s.jpg" width=100px height=90px>
+        Acura is the luxury vehicle division of Japanese automaker Honda.The brand was launched in the United States and Canada on 27 March 1986,
+    </div>
+    </body>
+</html>

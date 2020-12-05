@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+   <link id="pagestyle" rel="stylesheet" type="text/css" href="sign%20style.css">
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            
+   <script>
+function swapStyleSheet(sheet){
+	document.getElementById('pagestyle').setAttribute('href', sheet);
+}
+   </script>
+
+    
+    
+    <style>
+        .azura{
+          background-color:whitesmoke;
+          width:20px;
+          height:20px;
+          border-radius:20px;
+          border-color: antiquewhite;
+      }
+      .yellow{
+          background-color:yellow;
+          width:20px;
+          height:20px;
+          border-radius:20px;
+          border-color: antiquewhite;
+      }
+      .pink{
+          background-color:darksalmon;
+          width:20px;
+          height:20px;
+          border-radius:20px;
+          border-color: antiquewhite;
+      }
+      
+        
+    </style>
+    
+</head>
+<body>
+    <nav class="menu">
+<ul>
+<label class="logo" size="35">LIGHTNING MCQWEEN</label>
+<li> 
+<button onclick="swapStyleSheet('pink.css')" class="pink"></button>
+<button onclick="swapStyleSheet('yellow.css')" class="yellow" ></button>
+<button onclick="swapStyleSheet('sign%20style.css')" class="azura"></button>
+</li>
+<li><a href="#">Home</a></li>
+<li><a href="#">TRAINING</a></li>
+<li><a href="#">MARKET</a></li>
+<li><a href="#">TEAM</a></li>
+</ul>
+    </nav>
+
+
+
+<div id="loginbox2">
+
+<h2>
+ <button  class="head" onclick="myFunction()">sign in</button>
+ <button class="head2" >Sign Up</button>  
+</h2>
+    
+<form>
+ <div class="inputbox " >
+  <i class="fa fa-user fa-lg fa-fw"  style="font-size:29px"></i>
+    <input type="username" placeholder="full name" required>
+ </div>
+
+<br>
+ <div class="inputbox ">
+  <i class="fa fa-envelope fa-lg fa-fw"  style="font-size:29px"></i>
+    <input type="mail"placeholder="Email" required> 
+</div>
+
+<br>
+ <div class="inputbox">
+  <i class="fa fa-lock"   style="font-size:29px"></i>
+    <input type="password"  placeholder="password"required >
+ </div>
+
+<br>
+ <div class="inputbox"> 
+  <i class="fa fa-phone fa-lg fa-fw"  style="font-size:29px" ></i>
+    <input type="phone" placeholder="phone" required>
+ </div>
+
+<br>
+ <div class="inputbox">
+  <span> <b>Gender    </b></span>
+   <input type="checkbox"  name="gendar"> 
+      <label for="male">male</label>
+   <input type="checkbox"  name="gender">
+      <label type="female">female</label>
+ </div>
+
+<br>
+  <input type="submit"  value="submit">
+</form>
+</div>
+
+
+<div id="loginbox">
+<h2>
+  <button  class="head2" >Sign in </button>
+  <button class="head" onclick="myFunction()" >sign up</button>
+</h2>
+
+<form id="ee">
+<br>
+    
+<div class="inputbox">
+<br>
+    
+ <div class="inputbox">
+  <i class="fa fa-envelope fa-lg fa-fw"  style="font-size:29px"></i>
+   <input type="mail"placeholder="Email" required>
+ </div>
+
+<br>
+ <div class="inputbox" >
+    <i class="fa fa-lock"  style="font-size:29px"></i>
+     <input type="password"  placeholder="password"required >
+ </div>
+
+<br>
+    
+ <div class="inputbox">
+  <input type="radio" name="gendar" required > 
+   <label for="ramember">Remember Me </label>
+    <a href="">forget password?</a>
+ </div>
+
+    <input type="submit"  value="submit" required>
+
+<br>
+<br>
+    <span>Sign in with</span>
+<br>
+<br>
+
+<button class="g" style="font-size:24px">G-mail  <i class="fa fa-google"></i></button>
+<button class="f" style="font-size:24px"> Facebook  <i class="fa fa-facebook-official"></i></button></div>
+<br>
+    
+    
+</form>
+</div>
+
+
+
+
+
+<script>
+
+function myFunction() {
+
+  var y = document.getElementById("loginbox2");
+  var x = document.getElementById("loginbox");
+
+  if (window.getComputedStyle(y).visibility === "visible") {
+    y.style.visibility = "hidden";
+     x.style.visibility = "visible";
+
+
+  }
+    else if (window.getComputedStyle(y).visibility === "hidden") {
+    y.style.visibility = "visible";
+         x.style.visibility = "hidden";
+
+  }
+  
+}
+
+</script>
+
+</body>
+</html>

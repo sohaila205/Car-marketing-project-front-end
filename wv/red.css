@@ -1,0 +1,159 @@
+
+*{
+margin:0;
+padding:0;
+font-family: monospace;
+}
+body{
+background-color: blanchedalmond;
+
+}
+.page{
+margin:30px;
+    
+}
+
+
+.menu{
+background-color: firebrick;
+overflow:auto;
+
+}
+.menu label{
+float:left;
+color:white;
+font-size:50px;
+line-height:50px;
+padding:10px 60px;
+font-weight:bold;
+font-family:monospace ;
+text-align:center;
+}
+
+.menu ul {
+margin:0;
+padding:0;
+list-style:none;
+line-height:60px;
+}
+
+.menu li{
+    float:left;
+    position: relative;
+    left:22%;
+}
+
+.menu ul li a{ 
+text-decoration:none;
+width:100px;
+display:block;
+text-align:center;
+color:white;
+font-size:20px;
+font-family:sans-serif;
+padding-left:20px;
+
+}
+
+.menu li a:hover{
+color:white;
+opacity:0.5;
+font-size:19px;
+}
+
+
+span{
+color:red ;
+font-family: sans-serif;
+font-size:15px;
+}
+
+.red{color:red;}
+.gray{color:gray;}
+.blue{color:blue;}
+.black{color:black;}
+.yellow{color:#ddc944;}
+
+input{ 
+background-color: firebrick;
+color:white;
+width:200px;
+height:50px;
+margin-top:3px;
+}
+
+.container {
+  position: relative;
+  width: 45%;
+  height:300px;
+  margin:30px;
+  box-shadow: -3px -3px 20px firebrick;
+  border-radius: 5px;
+  display: inline-block;
+
+}
+
+.image {
+  display: block;
+  width: 300px;
+  height: 300px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color:  firebrick;
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  margin-left:110px;
+  text-align:center;
+}
+
+
+
+
+#panel {
+padding: 50px;
+background-color: firebrick;
+margin-top:5.5%;
+text-align:center;
+
+}
+.inputbox{
+  background-color:white;
+  color:firebrick;
+  width:200px;
+  height:30px;
+  text-align:center;
+
+}
+
+
+
+
+#myBtn,#myBtn0,#myBtn1,#myBtn2,#myBtn3,#myBtn4,#myBtn5,#myBtn6{
+  width:150px;
+  height:50px;
+  background-color:white;
+  color:firebrick;
+  text-align:center;
+  border-radius:10px;
+  border:none;
+}
